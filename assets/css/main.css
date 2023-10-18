@@ -1,10 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.navigation a {
+  color: white;
+}
+.navigation a:hover {
+  color: white;
 }
 
-#top-sec {
+.navbar {
+  width: 100%;
+  height: 50px;
+}
+.navbar .container-fluid {
+  background-color: black;
+  height: 50px;
+}
+.navbar .container-fluid .peterna {
+  width: 342px;
+  height: 25px;
+}
+.navbar .container-fluid a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 27px;
+  line-height: 20px;
+  font-weight: 610;
+}
+.navbar .nav1 {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nav1 a {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  line-height: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sec1 {
   width: 100%;
   height: 658px;
   background-color: #00798a;
@@ -12,7 +51,7 @@
   justify-content: center;
   align-items: center;
 }
-#top-sec .col-12 {
+#sec1 .col-12 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,28 +59,28 @@
   gap: 35px;
   color: white;
 }
-#top-sec .col-12 span {
+#sec1 .col-12 span {
   font-size: 80px;
   font-family: "Open Sans", sans-serif;
   line-height: 114px;
   color: white;
   font-weight: 900px;
 }
-#top-sec .col-12 h2 {
+#sec1 .col-12 h2 {
   font-size: 50px;
   font-family: "Open Sans", sans-serif;
   line-height: 40px;
   color: white;
   font-weight: 600px;
 }
-#top-sec .col-12 h3 {
+#sec1 .col-12 h3 {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   line-height: 30px;
   color: white;
   font-weight: 300px;
 }
-#top-sec .col-12 a {
+#sec1 .col-12 a {
   background-color: #fc4065;
   width: 301px;
   height: 43px;
@@ -53,33 +92,52 @@
   cursor: pointer;
 }
 
-#animation {
-  background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page201/peterna/assets/img/sativa.png);
+body {
+  background-image: url(/assets/SCSS/abstracts/aaaa.png);
+}
+
+#sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
+}
+#sec2 .container .col-12 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#animation .container {
-  width: 75%;
-}
-#animation .container .col-12 {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 400px;
 }
-#animation .ourService {
+#sec2 .ourservice {
+  height: 200px;
+  width: 95%;
   display: flex;
   justify-content: end;
   flex-direction: column;
-  height: 200px;
-  width: 95%;
 }
-#animation .sec2mid {
+#sec2 .ourservice h1 {
+  color: #00798a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 550;
+}
+#sec2 .ourservice h3 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+#sec2 .ourservice p {
+  color: #333333;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+#sec2 .feature {
   color: white;
+  gap: 10px;
+  background-color: #00798a;
   width: 92%;
   height: 430px;
   display: flex;
@@ -87,42 +145,37 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 10px;
-  background-color: #00798a;
 }
-#animation .sec2mid h4 {
+#sec2 .feature h4 {
   font-size: 22px;
   line-height: 40px;
 }
-#animation .sec2mid p {
+#sec2 .feature p {
   font-size: 16px;
   line-height: 30px;
 }
-#animation .sec2bottom {
-  width: 96%;
-  height: 250px;
+#sec2 .secbottom {
   display: flex;
   justify-content: left;
   flex-direction: column;
+  width: 96%;
+  height: 250px;
 }
-#animation .sec2bottom h2 {
+#sec2 .secbottom h2 {
   font-size: 30px;
   line-height: 50px;
 }
-#animation .sec2bottom p {
+#sec2 .secbottom p {
   font-size: 14px;
   line-height: 30px;
 }
 
 #sec3 {
+  display: flex;
+  justify-content: center;
   background-color: #00798a;
   width: 100%;
   height: 230px;
-  display: flex;
-  justify-content: center;
-}
-#sec3 .container {
-  width: 100%;
 }
 #sec3 .container .col-12 {
   width: 100%;
@@ -131,77 +184,91 @@
   width: 100%;
 }
 #sec3 .container .col-12 .row .col-8 {
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
-#sec3 .container .col-12 .row .col-8 .sec3first {
-  width: 100%;
-  height: 230px;
+#sec3 .container .col-12 .row .col-8 .secmid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 230px;
   color: white;
   gap: 40px;
 }
-#sec3 .container .col-12 .row .col-8 .sec3first h3 {
+#sec3 .container .col-12 .row .col-8 .secmid h3 {
   font-size: 60px;
   line-height: 30px;
 }
-#sec3 .container .col-12 .row .col-8 .sec3first h4 {
+#sec3 .container .col-12 .row .col-8 .secmid h4 {
   font-size: 22px;
   line-height: 40px;
 }
 #sec3 .container .col-12 .row .col-4 {
-  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40%;
 }
-#sec3 .container .col-12 .row .col-4 .sec3first {
+#sec3 .container .col-12 .row .col-4 .secmid {
   width: 100%;
   height: 230px;
+  color: white;
+  gap: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
-  gap: 40px;
 }
-#sec3 .container .col-12 .row .col-4 .sec3first h3 {
+#sec3 .container .col-12 .row .col-4 .secmid h3 {
   font-size: 60px;
   line-height: 30px;
 }
-#sec3 .container .col-12 .row .col-4 .sec3first h4 {
+#sec3 .container .col-12 .row .col-4 .secmid h4 {
   font-size: 22px;
   line-height: 40px;
 }
 
 #sec4 {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#sec4 .container {
-  width: 75%;
+  width: 100%;
+  height: auto;
 }
 #sec4 .container .col-12 {
   width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
 }
 #sec4 .sec4top {
   display: flex;
   justify-content: end;
   flex-direction: column;
-  height: 200px;
+  height: 201px;
   width: 100%;
+}
+#sec4 .sec4top h1 {
+  color: #00798a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 550;
+}
+#sec4 .sec4top h3 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+#sec4 .sec4top p {
+  color: #333333;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 #sec4 .row {
   width: 100%;
@@ -213,111 +280,188 @@
 }
 #sec4 .row .col-4 .category {
   width: 100%;
+  gap: 40px;
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 35px;
-  list-style: none;
 }
 #sec4 .row .col-4 .category li {
   font-size: 25px;
-  line-height: 36px;
   color: #858585;
 }
-#sec4 .row .col-4 .category .readmorer {
-  width: 100%;
-  height: 45px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d9534f;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400px;
-}
-#sec4 .row .col-4 .category .readmoreb {
-  width: 100%;
-  height: 45px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #428bca;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400px;
-}
-#sec4 .row .col-4 .category .readmoreg {
-  width: 100%;
-  height: 45px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5cb85c;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400px;
-}
 #sec4 .row .col-4 .category .price {
+  background-color: #1f8a63;
   width: 100%;
-  height: 114px;
-  color: white;
+  height: 112px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1f8a63;
   font-size: 45px;
   line-height: 64px;
-  font-weight: 900px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+#sec4 .row .col-4 .category .readmorer {
+  color: white;
+  background-color: #d2322d;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#sec4 .row .col-4 .category .readmoreb {
+  color: white;
+  background-color: #3276b1;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#sec4 .row .col-4 .category .readmoreg {
+  background-color: #47a447;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
 }
 #sec4 .row .col-4 .category .head {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   line-height: 20px;
   font-weight: 600px;
   width: 100%;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #sec5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00798a;
   width: 100%;
   height: 235px;
-  background-color: #00798a;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 #sec5 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#sec5 .container .row {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-#sec5 .container .row .sec5fst {
+#sec5 .container .col-12 {
+  width: 100%;
+}
+#sec5 .container .col-12 .row {
+  width: 100%;
+}
+#sec5 .container .col-12 .row .gap {
   display: flex;
+  gap: 50px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 30px;
 }
-#sec5 .container .row .sec5fst h3 {
+#sec5 .container .col-12 .row h3 {
+  font-family: "Open Sans", sans-serif;
   font-size: 60px;
   line-height: 30px;
+  font-weight: 900;
 }
-#sec5 .container .row .sec5fst h4 {
+#sec5 .container .col-12 .row h4 {
+  font-family: "Open Sans", sans-serif;
   font-size: 22px;
   line-height: 40px;
+  font-weight: 900;
+}
+
+#sec6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+#sec6 .container .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+#sec6 .contactus {
+  height: 200px;
+  width: 95%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+#sec6 .contactus h1 {
+  color: #00798a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 550;
+}
+#sec6 .contactus h3 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+#sec6 .contactus p {
+  color: #333333;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#form {
+  width: 100%;
+}
+#form .container {
+  width: 100%;
+}
+#form .container .row {
+  width: 100%;
+}
+#form .container .row .name-email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form .container .row .name-email .message-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#form .container .row .name-email .message-btn .btnsbmt {
+  width: 28%;
+}
+#form .container .row .name-email .infos {
+  line-height: 30px;
+  padding-bottom: 15px;
 }
